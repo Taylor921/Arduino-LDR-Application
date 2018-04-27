@@ -10,14 +10,14 @@ The microcontroller presented in this project is the Adafruit HUZZAH32 - ESP32 F
 
 A photoresistor is used in this example, but other sensors like a phototransistor or photodiode can be used depending on light reading requirements.
 
-A resistor between 1000 Ohms and 10,000 Ohms is recommended for the voltage divider circuit. 
+A resistor between 1k Ohm and 10k Ohms is recommended for the voltage divider circuit. 
 
 Our Parts List
 * [Adafruit HUZZAH32 - ESP32 Feather](https://learn.adafruit.com/adafruit-huzzah32-esp32-feather/overview)
 * [Eboot Photoresistor](https://www.amazon.com/gp/product/B01N7V536K/ref=oh_aui_detailpage_o09_s00?ie=UTF8&psc=1&pldnSite=1)
 * [Adafruit 3.7v 2000mAh Litium Ion Battery](https://www.amazon.com/gp/product/B0137ITW46/ref=oh_aui_detailpage_o02_s00?ie=UTF8&psc=1&pldnSite=1)
 * [2"x3"x4" Precision 3D Printed Box](https://github.com/Taylor921/Arduino-LDR-Application/tree/readme-edits/IoT-CaseFile)
-* [1000 ± 1% Ohm Elegoo Resistor](https://www.amazon.com/gp/product/B072BL2VX1/ref=oh_aui_detailpage_o00_s00?ie=UTF8&psc=1&pldnSite=1)
+* [1k ± 1% Ohm Elegoo Resistor](https://www.amazon.com/gp/product/B072BL2VX1/ref=oh_aui_detailpage_o00_s00?ie=UTF8&psc=1&pldnSite=1)
 * [Dupont Jumper Wires - 2 Male to Female, 4 Male to Male](https://www.amazon.com/Multicolored-Breadboard-Dupont-Jumper-wires/dp/B073X7P6N2/ref=sr_1_1_sspa?ie=UTF8&qid=1510091779&sr=8-1-spons&keywords=wire+jumpers&psc=1)
 * [Breadboard - Self-Adhesive (2 power busses, 10 columns, 30 rows)](https://www.sparkfun.com/products/12002)
 
@@ -37,12 +37,12 @@ Our Software
 
 ## Building the circuit
 ![Imgur](https://i.imgur.com/FVU1o2n.png)
-A simple voltage divider circuit is utilized to measure the incoming readings from the photoresistor. The photoresistor is connected to the voltage source of the microcontroller. As the light available to the photoresistor increases, its resistance decreases allowing a higher voltage to pass through. A voltage drop is created by the 1 k \u03A9 resistor between the analog pin and ground, which allows the voltage to be detected by the analog pin. 
+A simple voltage divider circuit is utilized to measure the incoming readings from the photoresistor. The photoresistor is connected to the voltage source of the microcontroller. As the light available to the photoresistor increases, its resistance decreases allowing a higher voltage to pass through. A voltage drop is created by the 1k Ohm resistor between the analog pin and ground, which allows the voltage to be detected by the analog pin. 
 
 When constructing the circuit, it is important to keep the following points in mind:
 *The analog pin used could have an impact on whether the proper readings are sent via Wi-Fi. Pins A0 and A1 should be avoided, as these have higher-priority functions which could mask the sensor function. Pin A4 is the recommended analog pin as it typically does not have other functions to disrupt the readings.
 *The microcontroller must be connected to a power source to function properly. A micro-usb connection will suffice while the device is connected to a computer for programming and testing, but using the lithium ion polymer battery previously described for everyday use is recommended.
-*A 
+*A 1 kOhm (recommended lower limit) resistor  was used in this project, but a resistor up to 10 kOhms is acceptable. A lower resistance will yield a greater range of light readings, but with lower sensitivity.
 
 ## Programming
 ```
