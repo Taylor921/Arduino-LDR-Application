@@ -74,7 +74,7 @@ void setup() {
   };
 }
 ```
-Within the setup for the program is the ```Serial.begin``` function, which begins serial data communications at the desired data rate (115200 bits per second or 115200 baud in this program). The photoresistor which was previously set as an integer is now configured as an input to be read by the microcontroller. Initialization of the Wi-Fi connection begins by using the thing.add_wifi function. Finally, light value (lightvalue) is output by the microcontroller via the Wi-Fi connection as a value with the name of "LUX".
+Within the setup for the program is the ```Serial.begin()``` function, which begins serial data communications at the desired data rate (115200 bits per second or 115200 baud in this program). The photoresistor which was previously set as an integer is now configured as an input to be read by the microcontroller. Initialization of the Wi-Fi connection begins by using the thing.add_wifi function. Finally, light value (lightvalue) is output by the microcontroller via the Wi-Fi connection as a value with the name of "LUX".
 ```
 void loop() {
   thing.handle();
