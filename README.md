@@ -15,23 +15,23 @@ A resistor between 1000 Ohms and 10,000 Ohms is recommended for the voltage divi
 
 Our Parts List
 * [Adafruit HUZZAH32 - ESP32 Feather](https://learn.adafruit.com/adafruit-huzzah32-esp32-feather/overview)
-* Eboot Photoresistor
-* Adafruit 3.7v 2000mAh Litium Ion Battery
+* [Eboot Photoresistor](https://www.amazon.com/gp/product/B01N7V536K/ref=oh_aui_detailpage_o09_s00?ie=UTF8&psc=1&pldnSite=1)
+* [Adafruit 3.7v 2000mAh Litium Ion Battery](https://www.amazon.com/gp/product/B0137ITW46/ref=oh_aui_detailpage_o02_s00?ie=UTF8&psc=1&pldnSite=1)
 * 2"x3"x4" Precision 3D Printed Box
-* 1000 ± 1% Ohm Elegoo Resistor
-* Dupont Jumper Wires - 2 Male to Female, 4 Male to Male
-* Breadboard - Self-Adhesive (2 power busses, 10 columns, 30 rows)
+* [1000 ± 1% Ohm Elegoo Resistor](https://www.amazon.com/gp/product/B072BL2VX1/ref=oh_aui_detailpage_o00_s00?ie=UTF8&psc=1&pldnSite=1)
+* [Dupont Jumper Wires - 2 Male to Female, 4 Male to Male](https://www.amazon.com/Multicolored-Breadboard-Dupont-Jumper-wires/dp/B073X7P6N2/ref=sr_1_1_sspa?ie=UTF8&qid=1510091779&sr=8-1-spons&keywords=wire+jumpers&psc=1)
+* [Breadboard - Self-Adhesive (2 power busses, 10 columns, 30 rows)](https://www.sparkfun.com/products/12002)
 
 
 
 ### Software
-Arduino IDE
+[Arduino IDE](https://www.arduino.cc/en/Main/Software)
 
-Thinger.io
+[Thinger.io](https://thinger.io/)
 
-Autodesk Fusion 360
+[Autodesk Fusion 360](https://www.autodesk.com/products/fusion-360/overview)
 
-The [Arduino IDE](https://www.arduino.cc/en/Main/Software) will be needed in order to program the IoT device. Along with this, the [Thinger.io Arduino library](https://github.com/thinger-io/Arduino-Library) should be added.
+The Arduino IDE will be needed in order to program the IoT device. Along with this, the [Thinger.io Arduino library](https://github.com/thinger-io/Arduino-Library) should be added.
 
 Our Software
 * Arduino IDE
