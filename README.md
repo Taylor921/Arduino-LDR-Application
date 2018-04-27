@@ -37,7 +37,7 @@ Our Software
 
 ## Building the circuit
 ![Imgur](https://i.imgur.com/FVU1o2n.png)
-A simple voltage divider circuit is utilized to measure the incoming readings from the photoresistor. The photoresistor is connected to the voltage source of the microcontroller. As the light available to the photoresistor increases, its resistance decreases allowing a higher voltage to pass through. A voltage drop is created by the 1 k u'\u03A9' resistor between the analog pin and ground, which allows the voltage to be detected by the analog pin. 
+A simple voltage divider circuit is utilized to measure the incoming readings from the photoresistor. The photoresistor is connected to the voltage source of the microcontroller. As the light available to the photoresistor increases, its resistance decreases allowing a higher voltage to pass through. A voltage drop is created by the 1 k U+03A9 resistor between the analog pin and ground, which allows the voltage to be detected by the analog pin. 
 
 When constructing the circuit, it is important to keep the following points in mind:
 *The analog pin used could have an impact on whether the proper readings are sent via Wi-Fi. Pins A0 and A1 should be avoided, as these have higher-priority functions which could mask the sensor function. Pin A4 is the recommended analog pin as it typically does not have other functions to disrupt the readings.
