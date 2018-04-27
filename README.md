@@ -1,5 +1,5 @@
 # Arduino-LDR-Application
-![Schematic](light sensor schematic.jpg)
+
 ## Description
 This project utilizes the Arduino ESP32 Espressif to create a light-sensing IoT device to automatically upload sensor readings to an app. 
 
