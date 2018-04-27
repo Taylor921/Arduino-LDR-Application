@@ -40,9 +40,9 @@ Our Software
 A simple voltage divider circuit is utilized to measure the incoming readings from the photoresistor. The photoresistor is connected to the voltage source of the microcontroller. As the light available to the photoresistor increases, its resistance decreases allowing a higher voltage to pass through. A voltage drop is created by the 1k Ohm resistor between the analog pin and ground, which allows the voltage to be detected by the analog pin. 
 
 When constructing the circuit, it is important to keep the following points in mind:
-*The analog pin used could have an impact on whether the proper readings are sent via Wi-Fi. Pins A0 and A1 should be avoided, as these have higher-priority functions which could mask the sensor function. Pin A4 is the recommended analog pin as it typically does not have other functions to disrupt the readings.
-*The microcontroller must be connected to a power source to function properly. A micro-usb connection will suffice while the device is connected to a computer for programming and testing, but using the lithium ion polymer battery previously described for everyday use is recommended.
-*A 1 kOhm (recommended lower limit) resistor  was used in this project, but a resistor up to 10 kOhms is acceptable. A lower resistance will yield a greater range of light readings, but with lower sensitivity.
+* The analog pin used could have an impact on whether the proper readings are sent via Wi-Fi. Pins A0 and A1 should be avoided, as these have higher-priority functions which could mask the sensor function. Pin A4 is the recommended analog pin as it typically does not have other functions to disrupt the readings.
+* The microcontroller must be connected to a power source to function properly. A micro-usb connection will suffice while the device is connected to a computer for programming and testing, but using the lithium ion polymer battery previously described for everyday use is recommended.
+* A 1 kOhm (recommended lower limit) resistor  was used in this project, but a resistor up to 10 kOhms is acceptable. A lower resistance will yield a greater range of light readings, but with lower sensitivity.
 
 ## Programming
 ```
