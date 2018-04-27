@@ -30,7 +30,7 @@ Our Software
 * [Autodesk Fusion 360](https://www.autodesk.com/products/fusion-360/overview)
 
 ## Autodesk Fusion360 
-[Fusion 360](https://www.autodesk.com/products/fusion-360/students-teachers-educators) was used to create the design file for the 3D-printed light sensor IoT case. For this project, 100 mm x 75 mm x 50 mm dimensions were used, but slightly smaller dimensions would be acceptable. The case consisted of two parts, a base and a lid, that conjoined by means of snap connections on either side of the case. The case also a micro-usb port built-in, along with a hole for the photoresistor. 
+[Fusion 360](https://www.autodesk.com/products/fusion-360/students-teachers-educators) was used to create the design file for the 3D-printed light sensor IoT case. For this project, 100 mm x 75 mm x 50 mm dimensions were used, but slightly smaller dimensions would be acceptable. The case consisted of two parts, a base and a lid, that conjoined by means of snap connections on either side of the case. The case also had a hole for a micro-usb connection to the IoT, along with a hole for the photoresistor to record data. 
 ![Imgur](https://i.imgur.com/LfwjFG7.png)
 
 ## thinger.io
