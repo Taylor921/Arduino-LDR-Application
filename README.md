@@ -43,27 +43,27 @@ Our Software
 #include <WiFiClientSecure.h>
 #include <ThingerESP32.h>
 ```
-
+These lines are used to include the necessary libraries for this program. WiFiClientSecure contains the wifi functions which will be utilized to connect the device to Wi-Fi. ThingerESP32, previously described, allows the device to utilize the established Wi-Fi connection to upload information to the thinger.io platform.
 ```
 #define USERNAME "your_user_name"
 #define DEVICE_ID "your_device_id"
 #define DEVICE_CREDENTIAL "your_device_credential"
 ```
-
+To properly connect to the thinger.io platform, the above definitions are made using the Username and device parameters previously setup on the thinger.io platform. This provides a method for the device to output directly to the user's account. To set these, simply enter the Username, Device Id, and Device credentials between the quotation marks as they appear on the site.
 ```
 #define SSID "your_wifi_ssid"
 #define SSID_PASSWORD "your_wifi_ssid_password"
 ```
-
+Defining the SSID and password for the Wi-Fi network is necessary to transmit data to the thinger.io platform. The SSID and password for this network can be entered between the quotation marks above.
 ```
 int lightvalue = 0;
 int photoRes=A4;
 ```
-
+The light value of the sensor and the pin(A4) of the photoresistor must be listed as integers before the setup so that they are both defined. 
 ```
 ThingerESP32 thing(USERNAME, DEVICE_ID, DEVICE_CREDENTIAL);
 ```
-
+The above function calls the user information previously defined to properly link the ThingerESP32 library to the appropriate account.
 ```
 void setup() {
   Serial.begin(115200);
@@ -74,12 +74,12 @@ void setup() {
   };
 }
 ```
-
+Within the setup for the program is the ```Serial.begin``` function, which begins serial data communications at the desired data rate (115200 bits per second or 115200 baud in this program). The photoresistor which was previously set as an integer is now configured as an input to be read by the microcontroller. Initialization of the Wi-Fi connection begins by using the thing.add_wifi function. Finally, light value (lightvalue) is output by the microcontroller via the Wi-Fi connection as a value with the name of "LUX".
 ```
-
 void loop() {
   thing.handle();
   lightvalue=analogRead(photoRes);
   Serial.println(lightvalue);
 }
 ```
+The data set for the device is referenced by ```thing.handle()``` for the purpose of transmitting to the platform. The photoresistor is read by the ```analogRead()``` function and is finally printed via ```Serial.println()```.
