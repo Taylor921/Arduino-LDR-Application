@@ -1,5 +1,5 @@
 # Arduino-LDR-Application
-## Description
+## Summary
 This project utilizes the Arduino ESP32 Espressif to create a light-sensing IoT device to automatically upload sensor readings to an app. 
 
 ## Prerequisites
