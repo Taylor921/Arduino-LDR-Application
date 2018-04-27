@@ -1,5 +1,5 @@
 # Arduino-LDR-Application
-## Summary
+## Description
 This project utilizes the Arduino ESP32 Espressif to create a light-sensing IoT device to automatically upload sensor readings to an app. 
 
 ## Prerequisites
@@ -30,6 +30,8 @@ Our Software
 * [Autodesk Fusion 360](https://www.autodesk.com/products/fusion-360/overview)
 
 ## Autodesk Fusion360 
+[Fusion 360](https://www.autodesk.com/products/fusion-360/students-teachers-educators) was used to create the design file for the 3D-printed light sensor IoT case. For this project, 100 mm x 75 mm x 50 mm dimensions were used, but slightly smaller dimensions would be acceptable. The case consisted of two parts, a base and a lid, that conjoined by means of snap connections on either side of the case. The case also a micro-usb port built-in, along with a hole for the photoresistor. 
+![Imgur](https://i.imgur.com/LfwjFG7.png)
 
 ## thinger.io
 [Thinger.io](https://thinger.io/) is a very user-friendly site which allows a person to upload recorded data from a device to be output to an app. To use the site, simply [sign up](https://console.thinger.io/#/signup) for an account, navigate to the "Devices page", and add your device.
@@ -40,9 +42,9 @@ Our Software
 A simple voltage divider circuit is utilized to measure the incoming readings from the photoresistor. The photoresistor is connected to the voltage source of the microcontroller. As the light available to the photoresistor increases, its resistance decreases allowing a higher voltage to pass through. A voltage drop is created by the 1k Ohm resistor between the analog pin and ground, which allows the voltage to be detected by the analog pin. 
 
 When constructing the circuit, it is important to keep the following points in mind:
-* The analog pin used could have an impact on whether the proper readings are sent via Wi-Fi. Pins A0 and A1 should be avoided, as these have higher-priority functions which could mask the sensor function. Pin A4 is the recommended analog pin as it typically does not have other functions to disrupt the readings.
-* The microcontroller must be connected to a power source to function properly. A micro-usb connection will suffice while the device is connected to a computer for programming and testing, but using the lithium ion polymer battery previously described for everyday use is recommended.
-* A 1k Ohm (recommended lower limit) resistor  was used in this project, but a resistor up to 10k Ohms is acceptable. A lower resistance will yield a greater range of light readings, but with lower sensitivity.
+*The analog pin used could have an impact on whether the proper readings are sent via Wi-Fi. Pins A0 and A1 should be avoided, as these have higher-priority functions which could mask the sensor function. Pin A4 is the recommended analog pin as it typically does not have other functions to disrupt the readings.
+*The microcontroller must be connected to a power source to function properly. A micro-usb connection will suffice while the device is connected to a computer for programming and testing, but using the lithium ion polymer battery previously described for everyday use is recommended.
+*A 1 kOhm (recommended lower limit) resistor  was used in this project, but a resistor up to 10 kOhms is acceptable. A lower resistance will yield a greater range of light readings, but with lower sensitivity.
 
 ## Programming
 ```
