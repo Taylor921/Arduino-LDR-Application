@@ -31,7 +31,7 @@ Thinger.io
 
 Autodesk Fusion 360
 
-The [Arduino IDE](https://www.arduino.cc/en/Main/Software){:target="_blank"} will be needed in order to program the IoT device. Along with this, the [Thinger.io](https://github.com/thinger-io/Arduino-Library){:target="_blank"} arduino library should be added.
+The [Arduino IDE](https://www.arduino.cc/en/Main/Software) will be needed in order to program the IoT device. Along with this, the [Thinger.io](https://github.com/thinger-io/Arduino-Library) arduino library should be added.
 
 Our Software
 * Arduino IDE
