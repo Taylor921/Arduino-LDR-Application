@@ -33,17 +33,18 @@ Our Software
 [Fusion 360](https://www.autodesk.com/products/fusion-360/students-teachers-educators) was used to create the design file for the 3D-printed light sensor IoT case. For this project, 100 mm x 75 mm x 50 mm dimensions were used, but slightly smaller dimensions would be acceptable. The case consisted of two parts, a base and a lid, that conjoined by means of snap connections on either side of the case. The case also had a hole for a micro-usb connection to the IoT, along with a hole for the photoresistor to record data. The design files for the case can be found [here](https://github.com/Taylor921/Arduino-LDR-Wireless-Application/tree/Files/IoT-CaseFile).
 ![Imgur](https://i.imgur.com/LfwjFG7.png)
 
-
 ## Thinger.io
 [Thinger.io](https://thinger.io/) is a very user-friendly site which allows a person to upload recorded data from a device to be output to an app. To use the site, simply [sign up](https://console.thinger.io/#/signup) for an account, navigate to the "Devices page", and add your device.
 ![Imgur](https://i.imgur.com/DEgTWAZ.png)
 
-Once a device is registerd, a "Data Bucket"
-![Imgur](https://i.imgur.com/DEgTWAZ.png)
+Once a device is registerd, navigate to "Data Buckets" and 'add bucket' enable bucket data storage and for data source select 'from device resource.' The bucket allows data to be populated and saved from the data sent by the IoT device with these settings.
+![Imgur](https://i.imgur.com/GKvue3m.png?1)
 
-Create a dashboard.
-![Imgur](https://i.imgur.com/DEgTWAZ.png)
+The "dashboard" allows for several differnt widgets that can be displayed on a web browser or mobile application. Two 'time series' widgets are added one to display data as it is being collected, which pulls data from the device and the other displaying old data which pulls data from the data bucket. A 'text/value' widget is also created pulling data from the IoT which gives a live feed of the light intensity being read. Depending on the desired results, many other widgets can easily be added. 
+![Imgur](https://i.imgur.com/SFd9cEr.png?1)
 
+In order to view the dashboard on a mobile device, a QR token key must be created. In order to do this navigate to 'access token.' Add, name, and enable a token. Navigate back to 'device' add another token directly to this device and select to populate a QR code, which can then be scanned by the mobile application.
+![Imgur](https://i.imgur.com/SJIKS4G.png?1)
 
 ## Building the circuit
 ![Imgur](https://i.imgur.com/FVU1o2n.png)
