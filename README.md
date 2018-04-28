@@ -30,9 +30,9 @@ Our Software
 * [Autodesk Fusion 360](https://www.autodesk.com/products/fusion-360/overview)
 
 ## Autodesk Fusion360 
-[Fusion 360](https://www.autodesk.com/products/fusion-360/students-teachers-educators) was used to create the design file for the 3D-printed light sensor IoT case. For this project, 100 mm x 75 mm x 50 mm dimensions were used, but slightly smaller dimensions would be acceptable. The case consisted of two parts, a base and a lid, that conjoined by means of snap connections on either side of the case. The case also had a hole for a micro-usb connection to the IoT, along with a hole for the photoresistor to record data. 
+[Fusion 360](https://www.autodesk.com/products/fusion-360/students-teachers-educators) was used to create the design file for the 3D-printed light sensor IoT case. For this project, 100 mm x 75 mm x 50 mm dimensions were used, but slightly smaller dimensions would be acceptable. The case consisted of two parts, a base and a lid, that conjoined by means of snap connections on either side of the case. The case also had a hole for a micro-usb connection to the IoT, along with a hole for the photoresistor to record data. The design files for the case can be found [here](https://github.com/Taylor921/Arduino-LDR-Wireless-Application/tree/Files/IoT-CaseFile).
 ![Imgur](https://i.imgur.com/LfwjFG7.png)
-The design files for the case can be found [here](https://github.com/Taylor921/Arduino-LDR-Wireless-Application/tree/Files/IoT-CaseFile).
+
 
 ## thinger.io
 [Thinger.io](https://thinger.io/) is a very user-friendly site which allows a person to upload recorded data from a device to be output to an app. To use the site, simply [sign up](https://console.thinger.io/#/signup) for an account, navigate to the "Devices page", and add your device.
