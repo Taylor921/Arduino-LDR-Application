@@ -106,4 +106,11 @@ Wifi testing of sending a 'hello world' text to thinger.io in order to determine
 
 Photoresistor testing was used to determine if the voltage divider was working and if the Ardiuno code was written correctly. The device was tested in a dim room and a bright phone light was used to see if a higher value would be detected by the photoresistor.
 
-Testing of the combination of the bluetooth and photorestistor code was necessary to get the data to read to Thinger.io. It was determined that using pin A4 was the best pin to use for transmitting data. Pin A3 and A2 also worked for reading the photoresistor. Pin A1 ans A0 caused an issue when data was being collected and trasmitted. 
+Testing of the combination of the bluetooth and photorestistor code was necessary to get the data to read to Thinger.io. It was determined that using pin A4 was the best pin to use for transmitting data. Pin A3 and A2 also worked for reading the photoresistor. Pin A1 ans A0 caused an issue when data was being collected and trasmitted.
+
+##Future Testing/Features
+This IoT and the software it uploads data too, Thinger.io, can be utilized to do much more. Listed below are several ways that the IoT can be improved moving forward. 
+* Within the Arduino code, certain light readings can create a notification for when a certain light level is reached. This could be very useful when setting up the grow lights within a greenhouse.
+* Within the Arduino code, certain light readings can create a notification for what type of plant is recommended based on the amount of light is being detected.
+* Other sensors can be built into the IoT such as a thermometer, humidity reader, etc. which can give significantly more data. Introduction of more sensors would be fairly cheap and would mostly require more time writing code and rebuilding the circuit. 
+* The current light sensor is not set up for personal use, so by building in more automation and user input throught thinger.io would allow the device to be used by a consumer. 
