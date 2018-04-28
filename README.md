@@ -1,5 +1,5 @@
 # Arduino-LDR-Application
-## Description
+## Summary
 This project utilizes the Arduino ESP32 Espressif to create a light-sensing IoT device to automatically upload sensor readings to an app. 
 
 ## Prerequisites
@@ -16,7 +16,7 @@ Our Parts List
 * [Adafruit HUZZAH32 - ESP32 Feather](https://learn.adafruit.com/adafruit-huzzah32-esp32-feather/overview)
 * [Eboot Photoresistor](https://www.amazon.com/gp/product/B01N7V536K/ref=oh_aui_detailpage_o09_s00?ie=UTF8&psc=1&pldnSite=1)
 * [Adafruit 3.7v 2000mAh Litium Ion Battery](https://www.amazon.com/gp/product/B0137ITW46/ref=oh_aui_detailpage_o02_s00?ie=UTF8&psc=1&pldnSite=1)
-* [2"x3"x4" Precision 3D Printed Box](https://github.com/Taylor921/Arduino-LDR-Application/tree/readme-edits/IoT-CaseFile)
+* [100mmx75mmx50mm Precision 3D Printed Box](https://github.com/Taylor921/Arduino-LDR-Application/tree/readme-edits/IoT-CaseFile)
 * [1k ± 1% Ohm Elegoo Resistor](https://www.amazon.com/gp/product/B072BL2VX1/ref=oh_aui_detailpage_o00_s00?ie=UTF8&psc=1&pldnSite=1)
 * [Dupont Jumper Wires - 2 Male to Female, 4 Male to Male](https://www.amazon.com/Multicolored-Breadboard-Dupont-Jumper-wires/dp/B073X7P6N2/ref=sr_1_1_sspa?ie=UTF8&qid=1510091779&sr=8-1-spons&keywords=wire+jumpers&psc=1)
 * [Breadboard - Self-Adhesive (2 power busses, 10 columns, 30 rows)](https://www.sparkfun.com/products/12002)
