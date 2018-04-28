@@ -34,7 +34,7 @@ Our Software
 ![Imgur](https://i.imgur.com/LfwjFG7.png)
 
 
-## thinger.io
+## Thinger.io
 [Thinger.io](https://thinger.io/) is a very user-friendly site which allows a person to upload recorded data from a device to be output to an app. To use the site, simply [sign up](https://console.thinger.io/#/signup) for an account, navigate to the "Devices page", and add your device.
 ![Imgur](https://i.imgur.com/DEgTWAZ.png)
 
@@ -92,3 +92,10 @@ void loop() {
 }
 ```
 The data set for the device is referenced by ```thing.handle()``` for the purpose of transmitting to the platform. The photoresistor is read by the ```analogRead()``` function and is finally printed via ```Serial.println()```.
+
+## Testin
+Wifi testing of sending a 'hello world' text to thinger.io in order to determine if the Adafruit Huzzah32 was properly connected to the internet and to see if data was being transmitted. 
+
+Photoresistor testing was used to determine if the voltage divider was working and if the Ardiuno code was written correctly. The device was tested in a dim room and a bright phone light was used to see if a higher value would be detected by the photoresistor.
+
+Testing of the combination of the bluetooth and photorestistor code was necessary to get the data to read to Thinger.io. It was determined that using pin A4 was the best pin to use for transmitting data. Pin A3 and A2 also worked for reading the photoresistor. Pin A1 ans A0 caused an issue when data was being collected and trasmitted. 
