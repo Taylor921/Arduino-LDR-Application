@@ -38,6 +38,13 @@ Our Software
 [Thinger.io](https://thinger.io/) is a very user-friendly site which allows a person to upload recorded data from a device to be output to an app. To use the site, simply [sign up](https://console.thinger.io/#/signup) for an account, navigate to the "Devices page", and add your device.
 ![Imgur](https://i.imgur.com/DEgTWAZ.png)
 
+Once a device is registerd, a "Data Bucket"
+![Imgur](https://i.imgur.com/DEgTWAZ.png)
+
+Create a dashboard.
+![Imgur](https://i.imgur.com/DEgTWAZ.png)
+
+
 ## Building the circuit
 ![Imgur](https://i.imgur.com/FVU1o2n.png)
 A simple voltage divider circuit is utilized to measure the incoming readings from the photoresistor. The photoresistor is connected to the voltage source of the microcontroller. As the light available to the photoresistor increases, its resistance decreases allowing a higher voltage to pass through. A voltage drop is created by the 1k Ohm resistor between the analog pin and ground, which allows the voltage to be detected by the analog pin. 
@@ -93,7 +100,7 @@ void loop() {
 ```
 The data set for the device is referenced by ```thing.handle()``` for the purpose of transmitting to the platform. The photoresistor is read by the ```analogRead()``` function and is finally printed via ```Serial.println()```.
 
-## Testin
+## Testing
 Wifi testing of sending a 'hello world' text to thinger.io in order to determine if the Adafruit Huzzah32 was properly connected to the internet and to see if data was being transmitted. 
 
 Photoresistor testing was used to determine if the voltage divider was working and if the Ardiuno code was written correctly. The device was tested in a dim room and a bright phone light was used to see if a higher value would be detected by the photoresistor.
