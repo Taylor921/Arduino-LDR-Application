@@ -110,8 +110,10 @@ Testing of the combination of the bluetooth and photorestistor code was necessar
 
 ## Future Testing/Features
 This IoT and the software it uploads data too, Thinger.io, can be utilized to do much more. Listed below are several ways that the IoT can be improved moving forward. 
-* Within the Arduino code, certain light readings can create a notification for when a certain light level is reached. This could be very useful when setting up the grow lights within a greenhouse.
+* Within the Arduino code, certain light readings can create a notification for when a certain light level is reached. This could be very useful when setting up grow lights within a greenhouse.
 * Within the Arduino code, certain light readings can create a notification for what type of plant is recommended based on the amount of light is being detected.
 * Other sensors can be built into the IoT such as a thermometer, humidity reader, etc. which can give significantly more data. Introduction of more sensors would be fairly cheap and would mostly require more time writing code and rebuilding the circuit. 
-* The current light sensor is not set up for personal use, so by building in more automation and user input throught thinger.io would allow the device to be used by a consumer. 
-* The device could also be programmed to store data and then transmitted over bluetooth. By using bluetooth, the device could be used in areas where there is no wifi. The current model requires wifi to continuously upload data to Thinger.io
+* The current light sensor is not set up for personal use, so by building in more automation and user input through Thinger.io personal use could be possible. 
+* The device could also be programmed to store data and then transmitted over bluetooth. By using bluetooth, the device could be used in areas where there is no wifi, such as a large field. The current model requires wifi to continuously upload data to Thinger.io
+* The device could be designed to be waterproof, so that there woudl be no worry of damage from rain or sprinklers.
+* The device could be designed to be powered by a photovoltaic cell, so that it could run for several days.
