@@ -55,6 +55,9 @@ When constructing the circuit, it is important to keep the following points in m
 *The microcontroller must be connected to a power source to function properly. A micro-usb connection will suffice while the device is connected to a computer for programming and testing, but using the lithium ion polymer battery previously described for everyday use is recommended.
 *A 1 kOhm (recommended lower limit) resistor  was used in this project, but a resistor up to 10 kOhms is acceptable. A lower resistance will yield a greater range of light readings, but with lower sensitivity.
 
+## Arduino
+Setting up the Arduino IDE is a relatively painless process. Simply navigate to [arduino.cc](https://www.arduino.cc/en/Main/Software) in a web browser and download the lastest version of the IDE. Once this is complete, install the [ESP32 core](https://learn.sparkfun.com/tutorials/esp32-thing-hookup-guide?_ga=2.55340331.1004235177.1517941036-1701875094.1393351411#installing-the-esp32-arduino-core)(instructions found here). It is necessary to create a folder for Arduino with the following set of sub-folders: ```Hardware```>```espressif```>```esp32```. Once done, the final step is to add the [thinger.io Arduino library](https://github.com/thinger-io/Arduino-Library). Simply download this file and extract it the the "libraries" section of your esp32 core.
+
 ## Programming
 ```
 #include <WiFiClientSecure.h>
